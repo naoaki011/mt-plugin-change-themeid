@@ -1,0 +1,11 @@
+name: Change Theme ID
+id: ChangeThemeID
+author_name: <__trans phrase="Hajime Fujimoto">
+author_link: http://www.h-fj.com/blog/
+description: <__trans phrase="Change theme ID of blog or website.">
+plugin_link: http://www.h-fj.com/blog/mt5plgdoc/changethemeid.php
+doc_link: http://www.h-fj.com/blog/mt5plgdoc/changethemeid.php
+version: 1.00
+l10n_class: ChangeThemeID::L10N
+callbacks:
+  MT::App::CMS::template_param.cfg_prefs: $ChangeThemeID::ChangeThemeID::Plugin::cfg_prefs

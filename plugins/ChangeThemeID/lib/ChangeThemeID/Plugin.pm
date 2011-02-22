@@ -43,7 +43,7 @@ sub cfg_prefs {
     <option value="<\$mt:var name="fjcti_id"\$>"<mt:if name="fjcti_blog_theme_id"> selected="selected"</mt:if>><\$mt:var name="fjcti_id"\$>(<\$mt:var name="fjcti_label"\$>)</option>
 </mt:loop>
 </select>
-&nbsp;<button id="fjcti_change_theme_id" onclick="\$(this).hide(); \$('#fjcti_cur_theme_id').hide(); \$('#theme_id').show(); return false;"><__trans phrase="Change theme ID"></button>
+&nbsp;<button id="fjcti_change_theme_id" onclick="jQuery(this).hide(); jQuery('#fjcti_cur_theme_id').hide(); jQuery('#theme_id').show(); return false;"><__trans phrase="Change theme ID"></button>
 HERE
     $html = $plugin->translate_templatized($html);
     $node->innerHTML($html);
